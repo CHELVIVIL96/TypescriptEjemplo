@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Camisas</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center bg-dark text-light">
+                    <h1>Camisas</h1>
+            </div>
+            
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-8">
+                    <form>
+                            <input type="text" id="marca" placeholder="Marca de la camisa">
+                            <input type="text" id="color" placeholder="color de la camisa">
+                            <input type="text" id="talla" placeholder="talla de la camisa">
+                            <input type="number" id="precio" placeholder="precio de la camisa">
+                            <input type="text" id="casa" placeholder="casa">
+                            <input class="btn-primary" type="button" value="Guardar Camisa" onclick="guardar()">
+                        </form>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+                <div class="col-8">
+                    <div class="bg-dark text-light text-center">
+                            <h4>Listado de Camisas:</h4>
+                    </div>
+                        
+                        <ul  class="bg-light text-dark"  id="listado"></ul>
+                </div>
+            </div>
+    </div>
+   
+  
+
+
+    <script src="js/camisas.js"></script>
+</body>
+</html>
